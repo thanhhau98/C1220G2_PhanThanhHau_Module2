@@ -5,6 +5,12 @@ public class ReadNumberIntoWords {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter number : ");
         int number = scanner.nextInt();
+        int ones = number % 10;
+        int tens = (number %100)/10;
+        int hundred = number /100 ;
+        String first = "";
+        String second = "";
+        String third = "";
         if (number < 10) {
             switch (number) {
                 case 0:
@@ -40,7 +46,7 @@ public class ReadNumberIntoWords {
             }
         } else {
             if (number < 20) {
-                switch (number - 10) {
+                switch (ones) {
                     case 0:
                         System.out.println("ten");
                         break;
@@ -74,10 +80,6 @@ public class ReadNumberIntoWords {
                 }
             } else {
                 if (number < 100) {
-                    int ones = number % 10;
-                    int tens = number / 10;
-                    String first = "";
-                    String second = "";
                     switch (ones) {
                         case 1:
                             first = "one";
@@ -136,135 +138,129 @@ public class ReadNumberIntoWords {
                     System.out.println(second + first);
                 } else {
                     if (number < 1000) {
-                        int one1 = number / 100;
-                        int ten1 = number / 10;
-                        int oneHundred = number % 10;
-                        String hundred = "";
-                        String tenstr = "";
-                        String onestr = "";
-                        switch (one1) {
+                        switch (hundred) {
                             case 1:
-                                hundred = "onehundred";
+                                third = "onehundred";
                                 break;
                             case 2:
-                                hundred = "twohundred";
+                                third = "twohundred";
                                 break;
                             case 3:
-                                hundred = "threehundred";
+                                third = "threehundred";
                                 break;
                             case 4:
-                                hundred = "fourhundred";
+                                third = "fourhundred";
                                 break;
                             case 5:
-                                hundred = "fivehundred";
+                                third = "fivehundred";
                                 break;
                             case 6:
-                                hundred = "sixhundred";
+                                third = "sixhundred";
                                 break;
                             case 7:
-                                hundred = "sevenhundred";
+                                third = "sevenhundred";
                                 break;
                             case 8:
-                                hundred = "eighthundred";
+                                third = "eighthundred";
                                 break;
                             case 9:
-                                hundred = "ninehundred";
+                                third = "ninehundred";
                                 break;
                         }
-                        if (ten1 == 1) {
-                            switch (oneHundred) {
+                        if (tens == 1) {
+                            switch (ones) {
                                 case 0:
-                                    tenstr = "";
+                                    second = "";
                                     break;
                                 case 1:
-                                    tenstr = "eleven";
+                                    second = "eleven";
                                     break;
                                 case 2:
-                                    tenstr = "twelve";
+                                    second = "twelve";
                                     break;
                                 case 3:
-                                    tenstr = "thirdteen";
+                                    second= "thirdteen";
                                     break;
                                 case 4:
-                                    tenstr = "fourteen";
+                                    second = "fourteen";
                                     break;
                                 case 5:
-                                    tenstr = "fifteen";
+                                    second = "fifteen";
                                     break;
                                 case 6:
-                                    tenstr = "sixteen";
+                                    second = "sixteen";
                                     break;
                                 case 7:
-                                    tenstr = "seventeen";
+                                    second = "seventeen";
                                     break;
                                 case 8:
-                                    tenstr = "eighteen";
+                                    second = "eighteen";
                                     break;
                                 case 9:
-                                    tenstr = "nineteen";
+                                    second = "nineteen";
                                     break;
                             }
-                            System.out.println(hundred + "and" + tenstr);
+                            System.out.println(third + " and " + second);
                         } else {
-                            switch (ten1) {
+                            switch (tens) {
                                 case 0:
-                                    tenstr = "";
+                                    second = "";
                                     break;
                                 case 2:
-                                    tenstr = "twenty";
+                                    second = "twenty";
                                     break;
                                 case 3:
-                                    tenstr = "thirty";
+                                    second = "thirty";
                                     break;
                                 case 4:
-                                    tenstr = "fourty";
+                                    second= "fourty";
                                     break;
                                 case 5:
-                                    tenstr = "fifty";
+                                    second= "fifty";
                                     break;
                                 case 6:
-                                    tenstr = "sixty";
+                                    second = "sixty";
                                     break;
                                 case 7:
-                                    tenstr = "seventy";
+                                    second= "seventy";
                                     break;
                                 case 8:
-                                    tenstr = "eighty";
+                                    second = "eighty";
                                     break;
                                 case 9:
-                                    tenstr = "ninety";
+                                    second = "ninety";
                                     break;
                             }
-                            switch (oneHundred) {
+                            switch (ones) {
                                 case 1:
-                                    onestr = "one";
+                                    first = "one";
                                     break;
                                 case 2:
-                                    onestr = "two";
+                                    first = "two";
                                     break;
                                 case 3:
-                                    onestr = "three";
+                                    first = "three";
                                     break;
                                 case 4:
-                                    onestr = "four";
+                                    first = "four";
                                     break;
                                 case 5:
-                                    onestr = "five";
+                                    first = "five";
                                     break;
                                 case 6:
-                                    onestr = "six";
+                                    first = "six";
                                     break;
                                 case 7:
-                                    onestr = "seven";
+                                    first = "seven";
                                     break;
                                 case 8:
-                                    onestr = "eight";
+                                    first = "eight";
                                     break;
                                 case 9:
-                                    onestr = "nine";
+                                    first = "nine";
                                     break;
                             }
-                            System.out.println(oneHundred + "and" + tenstr + onestr);
+                            System.out.println(third +" and "+second + first);
                         }
                     }
                 }
