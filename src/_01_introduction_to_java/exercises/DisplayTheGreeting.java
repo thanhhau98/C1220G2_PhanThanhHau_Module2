@@ -1,4 +1,4 @@
-package _01_introduction_to_java.Exercises;
+package _01_introduction_to_java.exercises;
 import java.util.Scanner;
 public class DisplayTheGreeting {
     public static void main(String[] args) {
