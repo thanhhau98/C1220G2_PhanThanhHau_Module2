@@ -20,23 +20,30 @@ public class AddElementToArray {
         }
         System.out.print("Property list: ");
         for (int j = 0; j < array.length; j++) {
-            System.out.print(array[j] + "\t");
+            System.out.print(array[j] +"\t");
         }
-        System.out.println("\nEnter element you want remove : ");
-        int remove = scanner.nextInt();
-        int index=1 ;
+        System.out.println("\nEnter element you want add : ");
+        int add = scanner.nextInt();
+        System.out.println("\nEnter index you want add : ");
+         int index = scanner.nextInt();
+        while (index<=1||index>=array.length-1){
+            System.out.println("Can't add element to array  ");
+            System.out.println("Enter index you want add : ");
+             index = scanner.nextInt();
+        }
+        int temp = index;
         for (int j = 0; j < array.length; j++) {
-            if (array[j] == remove) {
+            if (j==index-1) {
                 index = index + j;
-                System.out.println(remove + " have at position " + index);
-                for (int x = index - 1; x < array.length-1 ; x++) {
-                    array[x] = array[x + 1];
+                for (int x = array.length-1-j; x >=index-1 ; x--) {
+                    array[x] = array[x -1];
                 }
+                array[temp-1]=add;
             }
         }
         System.out.print("Result list : ");
         for (int n = 0; n < array.length; n++) {
-            System.out.print(array[n]+ "\t");
+            System.out.print(array[n]+"\t");
         }
     }
 }
