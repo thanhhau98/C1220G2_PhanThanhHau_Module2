@@ -38,12 +38,32 @@ public class DisplayFigure {
                             System.out.print("   *");
                         }
                     }
+                    System.out.println("\nPrint the square triangle ( top-right) ");
+                    for (int i = 0; i < width; i++) {
+                        for (int j = 1; j < i + 1 ; j++) {
+                            System.out.print("    ");
+                        }
+                        for (int j = width ; j > i; j--) {
+                            System.out.print("   *");
+                        }
+                        System.out.println();
+                    }
                     System.out.println("\nPrint the square triangle ( bottom-left) ");
                     for (int i = 0; i < width; i++) {
                         System.out.println();
                         for (int j = 0; j < i + 1; j++) {
                             System.out.print("   *");
                         }
+                    }
+                    System.out.println("\nPrint the square triangle ( bottom-right) ");
+                    for (int i = 0; i < width; i++) {
+                        for (int j = width-1; j >i ; j--) {
+                            System.out.print("    ");
+                        }
+                        for (int j = 1 ; j < i+2; j++) {
+                            System.out.print("   *");
+                        }
+                        System.out.println();
                     }
                     break;
                 case 3:
