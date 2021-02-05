@@ -3,11 +3,23 @@ public class FanClass {
     static final int SLOW=1;
     static final int MEDIUM=2;
     static final int FAST=3;
-    private int speed=SLOW ;
-    boolean on=false;
-    private double radius=5;
-    private String color = "blue";
-    public FanClass(double radius,String color,int speed,boolean on){
+    static final String COLOR_BLUE="blue";
+    public static final int SPEED_DEFAULT = SLOW;
+    public static final double RADIUS_DEFAULT=5;
+    public static final boolean ON_DEFAULT=false;
+    private  int speed;
+    boolean on;
+    private  double radius;
+    private  String color;
+
+    public FanClass() {
+        this.color = COLOR_BLUE;
+        this.speed = SPEED_DEFAULT;
+        this.radius= RADIUS_DEFAULT;
+        this.on=ON_DEFAULT;
+    }
+
+    public FanClass(double radius, String color, int speed, boolean on){
         this.color=color;
         this.radius=radius;
         this.speed=speed;
