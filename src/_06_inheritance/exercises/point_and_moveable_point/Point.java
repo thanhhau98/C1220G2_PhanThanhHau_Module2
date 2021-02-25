@@ -1,16 +1,16 @@
-package _06_inheritance.exercises.point2d_and_point3d;
+package _06_inheritance.exercises.point_and_moveable_point;
 
-import java.sql.Array;
 import java.util.Arrays;
 
-public class Point2D {
+public class Point {
     private float x ;
     private float y ;
 
-    public Point2D(){
+
+    public Point(){
 
     }
-    public Point2D(float x, float y){
+    public Point(float x, float y){
         this.x = x;
         this.y = y;
     }
@@ -45,4 +45,5 @@ public class Point2D {
     public String toString() {
         return Arrays.toString(getXY());
     }
+
 }
