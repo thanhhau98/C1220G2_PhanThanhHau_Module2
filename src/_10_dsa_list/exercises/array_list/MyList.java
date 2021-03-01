@@ -11,7 +11,7 @@ public class MyList<E> {
         elements = new Object[DEFAULT_CAPACITY];
     }
 
-    public MyList(int DEFAULT_CAPACITY)  {
+    public MyList(int DEFAULT_CAPACITY) {
         elements = new Object[DEFAULT_CAPACITY];
     }
 
@@ -44,56 +44,58 @@ public class MyList<E> {
     }
 
     public int indexOf(E o) {
-        if (contains(o)) {
-            for (int i = 0; i < size; i++) {
-                if (o.equals(elements[i])) {
-                    return i;
-                }
+
+        for (int i = 0; i < size; i++) {
+            if (o.equals(elements[i])) {
+                return i;
             }
+
         }
 
         return -1;
     }
 
-     public void clear(){
-         for (int i = 0; i < size; i++) {
-            elements[i]=null;
-             }
-         }
+    public void clear() {
+        for (int i = 0; i < size; i++) {
+            elements[i] = null;
+        }
+        size = 0;
+    }
 
-     public E remove(int index) {
-         for (int i = index; i < size; i++) {
-             elements[i]=elements[i+1];
-         }
-         elements[size]=null;
-        return (E)elements;
-     }
+    public E remove(int index) {
+        for (int i = index; i < size; i++) {
+            elements[i] = elements[i + 1];
+        }
+        elements[size] = null;
+        return (E) elements;
+    }
 
-     public int size(){
+    public int size() {
         return this.size;
-     }
+    }
 
-     public E clone (){
+    public E clone() {
         Object[] newElements = null;
-        for (int i=0 ; i<size;i++){
+        for (int i = 0; i < size; i++) {
             newElements[i] = elements[i];
         }
-        return (E)newElements;
-     }
+        return (E) newElements;
+    }
 
-     public boolean add(){
-         if (size == elements.length) {
-             return true;
-         }else {
-             return false;
-         }
-     }
-     @Override
-     public String toString() {
+    public boolean add() {
+        if (size == elements.length) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public String toString() {
         return "Mylist "
                 + "element "
                 + Arrays.toString(elements);
-     }
+    }
 
 }
 
