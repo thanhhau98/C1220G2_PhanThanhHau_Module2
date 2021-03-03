@@ -1,4 +1,4 @@
-package _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist;
+package _12_java_collection_framework.exercises.product_arraylist_linkedlist.linkedlist;
 
 public class Product {
     private Integer id;
@@ -29,10 +29,10 @@ public class Product {
         return price;
     }
 
-    public  Product(){
+    public Product(){
     }
 
-    public Product(Integer id , String name ,Double price){
+    public Product(Integer id , String name , Double price){
         this.id=id;
         this.name=name;
         this.price = price;

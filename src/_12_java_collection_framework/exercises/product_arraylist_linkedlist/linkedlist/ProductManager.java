@@ -1,10 +1,12 @@
-package _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist;
+package _12_java_collection_framework.exercises.product_arraylist_linkedlist.linkedlist;
 
+
+import _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductManager extends Product {
+public class ProductManager extends _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product {
 
     public void add(String product, List<String> arrayList) {
         arrayList.add(product);
@@ -32,12 +34,12 @@ public class ProductManager extends Product {
     }
 
     public static void main(String[] args) {
-        Product product1 = new ProductManager(1, "Meat", 5.5);
-        Product product2 = new ProductManager(2, "Pen", 1.5);
-        List<Product> arrayList = new ArrayList<>();
+        _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product product1 = new ProductManager(1, "Meat", 5.5);
+        _12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product product2 = new ProductManager(2, "Pen", 1.5);
+        List<_12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product> arrayList = new ArrayList<>();
         arrayList.add(product1);
         arrayList.add(product2);
-        for (Product product : arrayList) {
+        for (_12_java_collection_framework.exercises.product_arraylist_linkedlist.araylist.Product product : arrayList) {
             System.out.println(product);
         }
         arrayList.remove("Meat");
