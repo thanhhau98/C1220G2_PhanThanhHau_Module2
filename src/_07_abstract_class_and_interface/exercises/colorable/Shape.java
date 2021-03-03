@@ -1,8 +1,6 @@
 package _07_abstract_class_and_interface.exercises.colorable;
 
-import _07_abstract_class_and_interface.exercises.resizeable.Resizeable;
-
-public class Shape implements Resizeable {
+public class Shape  {
     private String color = "green";
     private boolean filled = true;
 
@@ -29,9 +27,6 @@ public class Shape implements Resizeable {
     public void setFilled(boolean filled) {
         this.filled = filled;
     }
-    public double getArea(){
-        return 0.0;
-    }
 
     @Override
     public String toString() {
@@ -41,7 +36,4 @@ public class Shape implements Resizeable {
                 + (isFilled() ? "filled" : "not filled");
     }
 
-    @Override
-    public void resize(double percent) {
-    }
 }

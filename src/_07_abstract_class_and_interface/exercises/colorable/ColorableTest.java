@@ -11,7 +11,7 @@ public class ColorableTest {
         System.out.println("Pre-size :");
 
         for (Shape shape : shapes) {
-            System.out.println(shape.getArea());
+            System.out.println(((Square)shape).getArea());
             if (shape instanceof Square){
                 ((Square) shape).howToColor();
             }

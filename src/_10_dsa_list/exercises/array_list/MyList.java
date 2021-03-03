@@ -84,9 +84,9 @@ public class MyList<E> {
 
     public boolean add() {
         if (size == elements.length) {
-            return true;
-        } else {
             return false;
+        } else {
+            return true;
         }
     }
 

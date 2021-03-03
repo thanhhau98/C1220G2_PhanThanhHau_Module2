@@ -1,4 +1,4 @@
-package _11_dsa_stack_queue.practices.optional_stack_uses_array;
+package _11_dsa_stack_queue.exercises.optional_convert_from_decimal_to_binary;
 
 public class MyStack {
     private int arr[];

@@ -1,7 +1,7 @@
 package _11_dsa_stack_queue.exercises.stack;
 import java.util.Stack;
 
-public class Number {
+public class StackOfNumber {
     private static void stackOfIntegers() {
         Stack<Integer> stack = new Stack();
 
