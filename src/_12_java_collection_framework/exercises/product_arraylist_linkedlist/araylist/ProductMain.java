@@ -64,7 +64,7 @@ public class ProductMain {
                     }
                 });
                 System.out.println("Already sorted");
-                showAllProduct(list);
+
                 break;
             case 2:
                 Collections.sort(list, new Comparator<Product>() {
@@ -74,8 +74,10 @@ public class ProductMain {
                     }
                 });
                 System.out.println("Already sorted");
-                showAllProduct(list);
+
                 break;
+            default:
+                showAllProduct(list);
 
         }
 
@@ -97,7 +99,7 @@ public class ProductMain {
 
     private static void deleteProductWithId(List<Product> list) {
         for (Product product:list) {
-            System.out.println(product.toString());
+            System.out.println(product);
         }
         System.out.println("Choice id");
         Scanner scanner = new Scanner(System.in);
