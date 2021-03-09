@@ -1,4 +1,4 @@
-package review_oop.oop_java_2.bai_1;
+package review_oop.oop_java_1.bai_1;
 
 public class Vehicle {
     private String name;

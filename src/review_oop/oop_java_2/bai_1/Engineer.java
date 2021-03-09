@@ -1,4 +1,4 @@
-package review_oop.oop_java_2.bai_2;
+package review_oop.oop_java_2.bai_1;
 
 public class Engineer extends Officers {
     String major;

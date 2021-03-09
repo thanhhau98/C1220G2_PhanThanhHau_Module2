@@ -1,4 +1,4 @@
-package review_oop.oop_java_2.bai_2;
+package review_oop.oop_java_2.bai_1;
 
 import java.util.List;
 import java.util.Scanner;

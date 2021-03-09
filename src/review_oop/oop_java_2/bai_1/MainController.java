@@ -1,15 +1,20 @@
 package review_oop.oop_java_2.bai_1;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MainController {
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        OfficersManager officersManager = new OfficersManager(new ArrayList<>());
+        officersManager.addOfficer(new Officers("dong","danang","nam",1992));
+        officersManager.addOfficer(new Officers("hong","danang","nu",1993));
 
-        VehicleManager vehicleManager = new VehicleManager(new ArrayList<>());
-        Vehicle vehicle = new Vehicle("suzuki", 80, 150);
-        Vehicle vehicle1 = new Vehicle("yamaha", 100, 80);
-        vehicleManager.addVehicle(vehicle);
-        vehicleManager.addVehicle(vehicle1);
-        vehicleManager.showTax();
+        System.out.println("input name");
+        String name = scanner.nextLine();
+        Officers searchOfficer = new Officers(name);
+        Officers nameOfiicer= officersManager.searchOfficer(searchOfficer);
+        System.out.println(nameOfiicer);
+        officersManager.showOfficers();
     }
 }
