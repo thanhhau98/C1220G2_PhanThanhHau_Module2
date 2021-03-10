@@ -1,7 +1,6 @@
-package _16_IO_text_file.exercises.copy_file_text;
+package _16_io_text_file.exercises.copy_file_text;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class CopyFileTextController {

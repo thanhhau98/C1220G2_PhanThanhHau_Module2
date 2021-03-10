@@ -1,4 +1,4 @@
-package _16_IO_text_file.exercises.copy_file_text;
+package _16_io_text_file.exercises.copy_file_text;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -31,10 +31,9 @@ public class CopyFileText {
     }
     public static void writeTargetFile(List<String> list){
         File file = new File(FILE_PATH2);
-        FileWriter fileWriter = null;
         BufferedWriter buffWrite = null;
         try {
-            fileWriter = new FileWriter(file, false);
+            FileWriter fileWriter = new FileWriter(file, false);
             buffWrite = new BufferedWriter(fileWriter);
             for (String string:list) {
                 buffWrite.write(string);
@@ -43,6 +42,12 @@ public class CopyFileText {
             buffWrite.flush();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            try {
+                buffWrite.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
     }
     }

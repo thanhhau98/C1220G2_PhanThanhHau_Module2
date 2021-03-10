@@ -1,4 +1,4 @@
-package _16_IO_text_file.practices.optional_total_number_in_file_text;
+package _16_io_text_file.practices.optional_total_number_in_file_text;
 
 import java.io.BufferedReader;
 import java.io.File;
