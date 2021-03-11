@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Controller {
 
-    public static final String PRODUCT_FILE_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\product_manager_save_by_binary_file\\ProductFile.CSV";
+    public static final String PRODUCT_FILE_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\product_manager_save_by_binary_file\\ProductFile.bin";
 
     public static void main(String[] args) {
         List<Product> productList=new ArrayList<>();

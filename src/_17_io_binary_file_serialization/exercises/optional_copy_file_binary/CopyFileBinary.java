@@ -10,8 +10,8 @@ import java.util.List;
 
 public class CopyFileBinary {
 
-    public static final String SOURCE_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\product_manager_save_by_binary_file\\ProductFile.CSV";
-    public static final String TARGET_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\optional_copy_file_binary\\TargetFile.CSV";
+    public static final String SOURCE_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\product_manager_save_by_binary_file\\ProductFile.bin";
+    public static final String TARGET_PATH = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_17_io_binary_file_serialization\\exercises\\optional_copy_file_binary\\TargetFile.bin";
 
     public static void main(String[] args) {
         List<Product> productList = new ArrayList<>();

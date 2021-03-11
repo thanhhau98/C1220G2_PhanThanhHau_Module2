@@ -6,7 +6,7 @@ import java.util.List;
 
 public class CopyFileText {
     public static final String FILE_PATH1 ="D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_16_IO_text_file\\exercises\\copy_file_text\\SourceFile.txt" ;
-    public static final String FILE_PATH2 = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_16_IO_text_file\\exercises\\copy_file_text\\TargetFile.txt";
+    public static final String FILE_PATH2 = "D:\\CodeGym\\C1220G2_PhanThanhHau_Module2\\src\\_16_IO_text_file\\exercises\\copy_file_text\\TargetFile.bin";
 
 
     public static List<String> readSourceFile() throws IOException {

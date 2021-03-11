@@ -12,18 +12,17 @@ public class TriangleExample  {
     }
     public static void main(String[] args) {
         while (true){
-        try {
-        Scanner scanner =new Scanner(System.in);
-        System.out.println("input a:");
-        int a = scanner.nextInt();
-        System.out.println("input b:");
-        int b = scanner.nextInt();
-        System.out.println("input c:");
-        int c = scanner.nextInt();
-        validate(a,b,c);
-        break;
-
-        }catch (IIllegalTriangleException e){
+            try {
+                Scanner scanner =new Scanner(System.in);
+                System.out.println("input a:");
+                int a = scanner.nextInt();
+                System.out.println("input b:");
+                int b = scanner.nextInt();
+                System.out.println("input c:");
+                int c = scanner.nextInt();
+                validate(a,b,c);
+                break;
+            }catch (IIllegalTriangleException e){
             System.err.println("Triangle not exist"+e.getMessage());
         }
     }
